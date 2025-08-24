@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { fetchDepartments, createDepartment, updateDepartment, deleteDepartment } from '../features/departments';
+import { fetchDepartments, createDepartment, updateDepartment, deleteDepartment } from '../features/departments/model/departmentSlice';
 import { Department, DepartmentLevel, UserRole } from '../shared/types';
 import { createDepartmentOptionsData } from '../shared/lib/departmentHierarchy';
 

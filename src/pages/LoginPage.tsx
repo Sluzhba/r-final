@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../app/hooks';
-import { loginUser } from '../features/auth';
+import { loginUser } from '../features/auth/model/authSlice';
 import { useTranslation } from '../shared/lib/useTranslation';
 
 const LoginPage: React.FC = () => {

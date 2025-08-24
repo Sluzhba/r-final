@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAuth, useSchedules } from '../app/hooks';
-import { fetchSchedules, createSchedule, updateSchedule, deleteSchedule } from '../features/schedule';
+import { fetchSchedules, createSchedule, updateSchedule, deleteSchedule } from '../features/schedule/model/scheduleSlice';
 import { Schedule, ScheduleType, CreateScheduleForm, UserRole } from '../shared/types';
 
 const AdminSchedulesPage: React.FC = () => {

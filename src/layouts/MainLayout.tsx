@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from '../shared';
+import Navbar from '../shared/ui/Navbar';
 
 interface MainLayoutProps {
   children: React.ReactNode;

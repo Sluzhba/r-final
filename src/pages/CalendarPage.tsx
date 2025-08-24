@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAuth, useDepartments, useSchedules, useDuty } from '../app/hooks';
-import { fetchDepartments } from '../features/departments';
-import { fetchSchedules } from '../features/schedule';
-import { fetchDutyCalendar, setSelectedDepartment } from '../features/duty';
+import { fetchDepartments } from '../features/departments/model/departmentSlice';
+import { fetchSchedules } from '../features/schedule/model/scheduleSlice';
+import { fetchDutyCalendar, setSelectedDepartment } from '../features/duty/model/dutySlice';
 import { Department, Schedule, CalendarDay } from '../shared/types';
 import { getUserName, mockDepartments } from '../shared/lib/mockData';
 import { createDepartmentOptionsData } from '../shared/lib/departmentHierarchy';

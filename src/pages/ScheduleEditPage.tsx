@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAuth, useDepartments, useSchedules, useDuty } from '../app/hooks';
-import { fetchDepartments } from '../features/departments';
-import { fetchSchedules } from '../features/schedule';
-import { fetchDutyCalendar, bulkUpdateDutyAssignments, deleteDutyAssignment } from '../features/duty';
+import { fetchDepartments } from '../features/departments/model/departmentSlice';
+import { fetchSchedules } from '../features/schedule/model/scheduleSlice';
+import { fetchDutyCalendar, bulkUpdateDutyAssignments, deleteDutyAssignment } from '../features/duty/model/dutySlice';
 import { Department, Schedule, CalendarDay, DutyAssignment } from '../shared/types';
 import { getUserName, getUsersByDepartment, mockDepartments } from '../shared/lib/mockData';
 import { useToast } from '../shared/lib/ToastContext';

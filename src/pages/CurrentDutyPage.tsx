@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAuth, useDepartments, useSchedules } from '../app/hooks';
-import { fetchDepartments } from '../features/departments';
-import { fetchSchedules } from '../features/schedule';
+import { fetchDepartments } from '../features/departments/model/departmentSlice';
+import { fetchSchedules } from '../features/schedule/model/scheduleSlice';
 import { Department, Schedule, DutyAssignment } from '../shared/types';
 import { dutyService } from '../features/duty/api/dutyService';
 import { getUserWithContactById, mockDepartments } from '../shared/lib/mockData';

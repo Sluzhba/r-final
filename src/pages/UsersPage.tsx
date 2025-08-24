@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { fetchDepartments } from '../features/departments';
+import { fetchDepartments } from '../features/departments/model/departmentSlice';
 import { User, UserRole } from '../shared/types';
 import { OrganizationTree } from '../features/departments/components/OrganizationTree';
 import { mockUsers } from '../shared/lib/mockData';
